@@ -10,7 +10,7 @@ namespace Linq.Database
 {
     public class VoorbeeldDBContext : DbContext
     {
-        private readonly string _connectionString = "Data Source=.;Initial Catalog=VoorbeelDbLinq;Persist Security Info=True;User ID=sa;Password=DevPassword123!;Trust Server Certificate=True";
+        private readonly string _connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=VoorbeeldDBLinq;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
 
         public DbSet<Voorbeeld> Voorbeelden { get; set; }
         public DbSet<Uitwerking> Uitwerkingen { get; set; }
